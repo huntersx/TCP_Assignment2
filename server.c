@@ -148,7 +148,7 @@ n=recv(newsockfd,msg,MAXSZ,0);
 	}
 
 	bzero( msg, sizeof(msg));
-	strcpy(msg,"Managed to Download... [Press q to exit ]");
+	strcpy(msg,"Managed to Download... Proceed(1,2,3,4) or\n[Press q to exit ]");
 
 	}while(check == false);
 	}
@@ -157,13 +157,13 @@ n=recv(newsockfd,msg,MAXSZ,0);
 	if(!strcmp(msg, "3"))
 	{
 		bzero( msg, sizeof(msg));
-		strcat(msg,"The Directory is created... [Press q to exit]");
+		strcat(msg,"The Directory is created...Proceed(1,2,3,4) or \n[Press q to exit]");
 	}
 
 	if(!strcmp(msg, "4"))
 	{
 		bzero( msg, sizeof(msg));
-		strcat(msg,"The Directory is deleted... [Press q to exit]");
+		strcat(msg,"The Directory is deleted...Proceed(1,2,3,4) or \n[Press q to exit]");
 	}
 if(n==0)
 {
